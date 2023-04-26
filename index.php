@@ -43,7 +43,7 @@ class CowsAndBullsEngine {
     function getBulls(array $numberArray, array $tryNumberArray): int
     {
         $bulls = 0;
-        for ($i=0; $i < count($numberArray); $i++) {
+        for ($i=0, $iMax = count($numberArray); $i < $iMax; $i++) {
             if ($numberArray[$i] == $tryNumberArray[$i]) {
                 $bulls+=1;
             }
